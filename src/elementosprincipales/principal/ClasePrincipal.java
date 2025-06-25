@@ -54,4 +54,11 @@ public class ClasePrincipal { // Clase, tipo
 	public static int sumar(int numero1, int numero2) {
 		return numero1+ numero2;
 	}
+	
+	public static void expresiones() {
+		int ex = 567;
+		int res = ex + 6;
+		int res2 = 4 + (7 - 9) * 7;
+		int res3 = sumar(1,2);
+	}
 }

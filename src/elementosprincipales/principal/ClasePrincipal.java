@@ -1,5 +1,7 @@
 package elementosprincipales.principal;
 
+import Modelos.Persona;
+
 public class ClasePrincipal { // Clase, tipo
 
 	public static void main(String[] args) {
@@ -40,6 +42,12 @@ public class ClasePrincipal { // Clase, tipo
 		
 		System.out.println("Sumas");
 		System.out.println("La suma es: " + sumar(23,6));
+		
+		
+		// POO
+		System.out.println("********Construyendo*********");
+		poo1();
+		
 	}
 	
 	public static void arrancar() {
@@ -60,5 +68,15 @@ public class ClasePrincipal { // Clase, tipo
 		int res = ex + 6;
 		int res2 = 4 + (7 - 9) * 7;
 		int res3 = sumar(1,2);
+		
+		char l;
+		//l = "Hola mundo";
+		//l = "p";
+		l = 't';
+	}
+	
+	public static void poo1() {
+		Persona p01 = new Persona();
+		System.out.println(p01);
 	}
 }

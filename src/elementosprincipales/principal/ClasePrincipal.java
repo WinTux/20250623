@@ -39,8 +39,7 @@ public class ClasePrincipal { // Clase, tipo
 		System.out.println(cadena);
 		
 		System.out.println("Sumas");
-		int r = sumar(23,6);
-		System.out.println("La suma es: " + r);
+		System.out.println("La suma es: " + sumar(23,6));
 	}
 	
 	public static void arrancar() {
@@ -53,8 +52,6 @@ public class ClasePrincipal { // Clase, tipo
 	}
 	
 	public static int sumar(int numero1, int numero2) {
-		int resultado;
-		resultado = numero1+ numero2;
-		return resultado;
+		return numero1+ numero2;
 	}
 }

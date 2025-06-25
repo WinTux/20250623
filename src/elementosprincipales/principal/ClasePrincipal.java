@@ -31,14 +31,30 @@ public class ClasePrincipal { // Clase, tipo
 		System.out.println("La multi es: "+(aaa*bbb));
 		System.out.println("La division es: "+(aaa/bbb));
 		
+		// Métodos
 		
+		arrancar();
 		
+		String cadena = "Esta es una cadena simple";
+		System.out.println(cadena);
+		
+		System.out.println("Sumas");
+		int r = sumar(23,6);
+		System.out.println("La suma es: " + r);
 	}
 	
 	public static void arrancar() {
-		
+		System.out.println("Está arrancando el sistema ...");
+		hackearLaNASA();
 	}
 	public static void hackearLaNASA() { // Camel case
-		
+		System.out.println("Iniciando hackeo ...");
+		System.out.println("Desactivando módulo de hackeo: ético ...");
+	}
+	
+	public static int sumar(int numero1, int numero2) {
+		int resultado;
+		resultado = numero1+ numero2;
+		return resultado;
 	}
 }

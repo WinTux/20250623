@@ -1,5 +1,7 @@
 package elementosprincipales.principal;
 
+import java.util.Scanner;
+
 import Modelos.Persona;
 
 public class ClasePrincipal { // Clase, tipo
@@ -48,6 +50,15 @@ public class ClasePrincipal { // Clase, tipo
 		System.out.println("********Construyendo*********");
 		poo1();
 		
+		/*
+		// 2do tipo de error: durante la ejecucion
+		Scanner lector = new Scanner(System.in);
+		System.out.println("Por favor ingrese un numero entero");
+		// La idea es dividir 20 entre lo que ingrese el usuario.
+		int delUsuario = lector.nextInt();
+		int resultado = 20 / delUsuario;
+		System.out.println("La division es: "+resultado);
+		*/
 	}
 	
 	public static void arrancar() {
@@ -77,6 +88,30 @@ public class ClasePrincipal { // Clase, tipo
 	
 	public static void poo1() {
 		Persona p01 = new Persona();
+		Persona p02 = new Persona("Pliplipuch","Trikitraka");
+		Persona p03 = new Persona("Pepe","Perales");
+		Persona p04 = new Persona();
 		System.out.println(p01);
+		System.out.println(p03.obtenerNombre());
+		System.out.println(p03.nombreCompleto());
+		String nomnom = "Juancho";
+		p03.asignarNombre(nomnom);
+		p03.hablar();
+		p03.caminar(6);
+		p03.setEdad(20);
+		p03.setDomicilio("Av. Siempre Viva");
+		p03.setGenero("Masculino");
+		p03.setTelefonoCel("70123456");
+		
+		System.out.println("La edad es: "+p03.getEdad());
+		System.out.println("El domicilio es: "+p03.getDomicilio());
+		System.out.println("El genero es: "+p03.getGenero());
+		System.out.println("el telefono es: "+p03.getTelefonoCel());
+		p03.setEdad(-512);
+		System.out.println("La edad es: "+p03.getEdad());
+		System.out.println("El domicilio es: "+p03.getDomicilio());
+		System.out.println("El genero es: "+p03.getGenero());
+		System.out.println("el telefono es: "+p03.getTelefonoCel());
+		
 	}
 }

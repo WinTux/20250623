@@ -36,4 +36,14 @@ public class Estudiante extends Persona{
 		this.carrera=carrera;
 		this.matricula=matricula;
 	}
+	public Estudiante(String nombre, String apellido, int edad, String domicilio, String telefonoCel, String genero,
+			String carrera, int matricula) {
+		super(nombre, apellido, edad, domicilio, telefonoCel, genero);
+		this.carrera = carrera;
+		this.matricula = matricula;
+	}
+	
+	public void hablar() {
+		System.out.println("Soy un estudiante y estoy hablando de cosas estudiosas");
+	}
 }

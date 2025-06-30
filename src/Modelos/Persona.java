@@ -31,6 +31,16 @@ public class Persona {
 	public void asignarNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	public Persona(String nombre, String apellido, int edad, String domicilio, String telefonoCel, String genero) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.domicilio = domicilio;
+		this.telefonoCel = telefonoCel;
+		this.genero = genero;
+	}
+
 	public String obtenerNombre() {
 		return nombre;
 	}
@@ -89,6 +99,9 @@ public class Persona {
 	public void hablar() {
 		System.out.println("Soy una persona y estoy hablando");
 	}
+	public void hablar(String mensaje) {
+		System.out.println("Soy una persona y digo que " + mensaje);
+	} 
 	
 	public void caminar(int pasos) {
 		System.out.println("Estoy caminando " + pasos + " pasos.");

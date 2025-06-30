@@ -122,5 +122,34 @@ public class ClasePrincipal { // Clase, tipo
 		
 		est01.setNombre("Ana");
 		est01.setApellido("Barrios");
+		
+		Estudiante est02 = new Estudiante("Pepe","Perales",20,"Calle 1, esq. 2","76543210","Masculino","Ing. Sistemas",8880012);
+		est02.hablar();
+		
+		Proveedor pro01 = new Proveedor();
+		pro01.hablar();
+		pro01.hablar("no hay productos en el almacen.");
+		
+		// Arreglos
+		int a = 78;
+		float b = 67;
+		Boolean ff = true;
+		
+		int c[] = new int[5];
+		/* 
+		 * c
+		 * [][][][456][]
+		 * 0 1 2 3    4
+		 * c
+		 * []
+		 * []
+		 * []
+		 * []
+		 * []
+		 * 
+		 * */
+		c[3] = 456;
+		
+		// arreglos para concluir polimorfismo.
 	}
 }

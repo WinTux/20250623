@@ -2,8 +2,8 @@ package Modelos;
 
 public class Persona {
 	// ABSTRACCION
-	private String nombre;
-	private String apellido;
+	protected String nombre;
+	protected String apellido;
 	private int edad;
 	//public double estatura;
 	private String domicilio;

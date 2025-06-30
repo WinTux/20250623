@@ -2,7 +2,7 @@ package elementosprincipales.principal;
 
 import java.util.Scanner;
 
-import Modelos.Persona;
+import Modelos.*;
 
 public class ClasePrincipal { // Clase, tipo
 
@@ -113,5 +113,14 @@ public class ClasePrincipal { // Clase, tipo
 		System.out.println("El genero es: "+p03.getGenero());
 		System.out.println("el telefono es: "+p03.getTelefonoCel());
 		
+		// Herencia
+		Estudiante est01 = new Estudiante();
+		System.out.println("La edad es: "+est01.getEdad());
+		System.out.println("El domicilio es: "+est01.getDomicilio());
+		System.out.println("El genero es: "+est01.getGenero());
+		System.out.println("el telefono es: "+est01.getTelefonoCel());
+		
+		est01.setNombre("Ana");
+		est01.setApellido("Barrios");
 	}
 }

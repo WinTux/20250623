@@ -131,6 +131,7 @@ public class ClasePrincipal { // Clase, tipo
 		pro01.hablar("no hay productos en el almacen.");
 		
 		// Arreglos
+		// Arreglos unidimensionales
 		int a = 78;
 		float b = 67;
 		Boolean ff = true;
@@ -149,7 +150,76 @@ public class ClasePrincipal { // Clase, tipo
 		 * 
 		 * */
 		c[3] = 456;
+		int aux[] = new int[7];
+		// sobre referencia y valor
 		
+		int b1 = 7;
+		
+		int b2 = b1; // copia por valor
+		
+		b1 = 9;
+		aux = c; // copia por referencia
+		for(int i=0;i<5;i++) {
+			aux[i] = c[i];
+		}
+		
+		c = aux;
+		
+		// arreglos bidimensionales
+		String casillas[][] = new String[2][4]; // fila, columna
+		/*
+		 * [][][][]
+		 * [][][][]
+		 * 
+		 * [][]
+		 * [][]
+		 * [][]
+		 * [][]
+		 * 
+		 * 
+		 * */
+		casillas[1][2] = "56"; // 2da fila, 3ra columna
+		
+		int cubo[][][] = new int[3][3][3];// fila, columna, capa
+		
+		/* 0      1      2
+		 * [][][] [][][] [][][]
+		 * [][][] [][][] [][][]
+		 * [][][] [][][] [][][]
+		 * 
+		 * */
+		
+		int algo[][][][][] = new int [8][3][4][6][4];
 		// arreglos para concluir polimorfismo.
+		System.out.println("**************Recorriendo arreglos****************");
+		Proveedor provs[] = new Proveedor[3];
+		provs[2] = pro01;
+		provs[0] = new Proveedor();
+		provs[1] = new Proveedor("Samantha","Barrios");
+		for(int i =0;i<provs.length;i++)
+			provs[i].hablar("temas de trabajo");
+		
+		Estudiante ests[] = new Estudiante[3];
+		ests[0] = est01;
+		ests[1] = est02;
+		ests[2] = new Estudiante();
+		for(int i =0;i<ests.length;i++)
+			ests[i].hablar("temas de estudio");
+		
+		Persona personas[] = new Persona[3];
+		personas[0] = est01;
+		personas[1] = pro01;
+		personas[2] = new Cliente();//Proveedor("Sofia","Roca");
+		for(int i =0;i<personas.length;i++)
+			personas[i].hablar("tema de convesacion");
+		
+		Ciudadano ciudadanos[] = new Ciudadano[3];
+		ciudadanos[0] = est01;
+		//ciudadanos[1] = new Cliente(); //Error
+		ciudadanos[1] = new Proveedor();
+		ciudadanos[2] = pro01;
+		for(int i =0;i<ciudadanos.length;i++)
+			ciudadanos[i].votar("ABC");
+		
 	}
 }

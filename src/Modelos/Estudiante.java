@@ -1,6 +1,6 @@
 package Modelos;
 
-public class Estudiante extends Persona{
+public class Estudiante extends Persona implements Ciudadano{
 	private String carrera;
 	private int matricula;
 	public String getCarrera() {
@@ -46,4 +46,15 @@ public class Estudiante extends Persona{
 	public void hablar() {
 		System.out.println("Soy un estudiante y estoy hablando de cosas estudiosas");
 	}
+	public void hablar(String mensaje) {
+		System.out.println("Soy un estudiante y digo que " + mensaje);
+	}
+	@Override
+	public void votar(String partido) {
+		System.out.println("Como estudiante, voy a votar por el Centro de estudiantes " + partido);
+	}
+	@Override
+	public void pagarImpuestos() {
+		System.out.println("Soy estudiante y tengo impuestos que pagar.");
+	} 
 }

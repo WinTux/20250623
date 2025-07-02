@@ -1,6 +1,6 @@
 package Modelos;
 
-public class Proveedor extends Persona {
+public class Proveedor extends Persona implements Ciudadano {
 	private String correo;
 	private int nit;
 	public Proveedor(String correo, int nit) {
@@ -41,5 +41,13 @@ public class Proveedor extends Persona {
 	
 	@Override public void hablar(String mensaje) {
 		System.out.println("Como proveedor digo que " + mensaje);
+	}
+	@Override
+	public void votar(String partido) {
+		System.out.println("Como proveedor, voy a votar para las presidenciales por " + partido);
+	}
+	@Override
+	public void pagarImpuestos() {
+		System.out.println("Como proveedor, tengo impuestos que pagar mensualmente");
 	} 
 }
